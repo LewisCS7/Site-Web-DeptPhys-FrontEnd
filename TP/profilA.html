@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Admin Profil</title>
+
+		<!-- Meta -->
+		<meta name="description" content="Marketplace for Bootstrap Admin Dashboards" />
+		<meta name="author" content="Bootstrap Gallery" />
+		<link rel="canonical" href="https://www.bootstrap.gallery/">
+		<meta property="og:url" content="https://www.bootstrap.gallery">
+		<meta property="og:title" content="Admin Templates - Dashboard Templates | Bootstrap Gallery">
+		<meta property="og:description" content="Marketplace for Bootstrap Admin Dashboards">
+		<meta property="og:type" content="Website">
+		<meta property="og:site_name" content="Bootstrap Gallery">
+		<link rel="shortcut icon" href="assets/images/favicon.svg" />
+
+		<!-- Google Web Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.gstatic.com" rel="preconnect">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+		<!-- Icon Font Stylesheet -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+		<!-- Customized Bootstrap Stylesheet -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- ************* CSS Files ************* -->
+		<!-- Template Stylesheet -->
+		<link href="assets/fonts/bootstrap/bootstrap-icons.css" rel="stylesheet">
+		<link href="assets/css/main.min.css" rel="stylesheet">
+		<link href="assets/css/style.css" rel="stylesheet">
+
+		<!-- Vendor CSS Files -->
+		<link href="assets/vendor/overlay-scroll/OverlayScrollbars.min.css" rel="stylesheet">
+		<link href="assets/vendor/toastify/toastify.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		<!-- Page wrapper start -->
+		<div class="page-wrapper">
+
+			<!-- App header starts -->
+			<div class="app-header d-flex align-items-center">
+
+				<!-- Toggle buttons start -->
+				<div class="d-flex">
+					<button class="toggle-sidebar" id="toggle-sidebar">
+						<i class="bi bi-list lh-1"></i>
+					</button>
+					<button class="pin-sidebar" id="pin-sidebar">
+						<i class="bi bi-list lh-1"></i>
+					</button>
+				</div>
+				<!-- Toggle buttons end -->
+
+				<!-- App brand starts -->
+				<div class="app-brand py-2 ms-3">
+					<a href="index.html" class="d-sm-block d-none">
+						<img src="assets/images/logo.svg" class="logo" alt="Bootstrap Gallery" />
+					</a>
+					<a href="index.html" class="d-sm-none d-block">
+						<img src="assets/images/logo-sm.svg" class="logo" alt="Bootstrap Gallery" />
+					</a>
+				</div>
+				<!-- App brand ends -->
+
+				<!-- App header actions start -->
+				<div class="header-actions col">
+					<div class="d-lg-flex d-none">
+						<div class="dropdown border-start">
+							<a class="dropdown-toggle d-flex px-3 py-4 position-relative" href="#!" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="bi bi-bell fs-4 lh-1 text-secondary"></i>
+								<span class="count-label info"></span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-end shadow-lg">
+								<h5 class="fw-semibold px-3 py-2 text-primary">
+									Notifications
+								</h5>
+								<div class="dropdown-item">
+									<div class="d-flex py-2 border-bottom">
+										<div class="icon-box md bg-success rounded-circle me-3">
+											<i class="bi bi-exclamation-triangle text-white fs-4"></i>
+										</div>
+										<div class="m-0">
+											<h6 class="mb-1 fw-semibold">Rosalie Deleon</h6>
+											<p class="mb-1">You have new order.</p>
+											<p class="small m-0 text-secondary">30 mins ago</p>
+										</div>
+									</div>
+								</div>
+								<div class="dropdown-item">
+									<div class="d-flex py-2 border-bottom">
+										<div class="icon-box md bg-danger rounded-circle me-3">
+											<i class="bi bi-exclamation-octagon text-white fs-4"></i>
+										</div>
+										<div class="m-0">
+											<h6 class="mb-1 fw-semibold">Donovan Stuart</h6>
+											<p class="mb-1">Membership has been expired.</p>
+											<p class="small m-0 text-secondary">2 days ago</p>
+										</div>
+									</div>
+								</div>
+								<div class="dropdown-item">
+									<div class="d-flex py-2">
+										<div class="icon-box md bg-warning rounded-circle me-3">
+											<i class="bi bi-exclamation-square text-white fs-4"></i>
+										</div>
+										<div class="m-0">
+											<h6 class="mb-1 fw-semibold">Roscoe Richards</h6>
+											<p class="mb-1">Payment pending. Pay now.</p>
+											<p class="small m-0 text-secondary">3 days ago</p>
+										</div>
+									</div>
+								</div>
+								<div class="d-grid mx-3 my-1">
+									<a href="javascript:void(0)" class="btn btn-primary">View all</a>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown border-start">
+							<a class="dropdown-toggle d-flex px-3 py-4 position-relative" href="#!" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="bi bi-envelope-open fs-4 lh-1 text-secondary"></i>
+								<span class="count-label"></span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-end shadow-lg">
+								<h5 class="fw-semibold px-3 py-2 text-primary">Messages</h5>
+								<div class="dropdown-item">
+									<div class="d-flex py-2 border-bottom">
+										<img src="assets/images/user3.png" class="img-3x me-3 rounded-5" alt="Admin Theme" />
+										<div class="m-0">
+											<h6 class="mb-1 fw-semibold">Angelia Payne</h6>
+											<p class="mb-1">
+												Membership has been ended.
+											</p>
+											<p class="small m-0 text-secondary">Today, 07:30pm</p>
+										</div>
+									</div>
+								</div>
+								<div class="dropdown-item">
+									<div class="d-flex py-2 border-bottom">
+										<img src="assets/images/user1.png" class="img-3x me-3 rounded-5" alt="Admin Theme" />
+										<div class="m-0">
+											<h6 class="mb-1 fw-semibold">Clyde Fowler</h6>
+											<p class="mb-1">
+												Congratulate, James for new job.
+											</p>
+											<p class="small m-0 text-secondary">Today, 08:00pm</p>
+										</div>
+									</div>
+								</div>
+								<div class="dropdown-item">
+									<div class="d-flex py-2">
+										<img src="assets/images/user4.png" class="img-3x me-3 rounded-5" alt="Admin Theme" />
+										<div class="m-0">
+											<h6 class="mb-1 fw-semibold">Sophie Michiels</h6>
+											<p class="mb-1">
+												Lewis added new schedule release.
+											</p>
+											<p class="small m-0 text-secondary">Today, 09:30pm</p>
+										</div>
+									</div>
+								</div>
+								<div class="d-grid mx-3 my-1">
+									<a href="javascript:void(0)" class="btn btn-primary">View all</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="dropdown ms-2">
+						<a id="userSettings" class="dropdown-toggle d-flex py-2 align-items-center text-decoration-none" href="#!"
+							role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<img src="assets/images/lewis1.png" class="rounded-2 img-3x" alt="Bootstrap Gallery" />
+							<span class="ms-2 text-truncate d-lg-block d-none">Anne Santiago</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-end shadow-lg">
+							<div class="header-action-links mx-3 gap-2">
+								<a class="dropdown-item" href="profilE.html"><i class="bi bi-person text-primary"></i>Profile</a>
+								<!-- <a class="dropdown-item" href="settings.html"><i class="bi bi-gear text-danger"></i>Settings</a>
+								<a class="dropdown-item" href="widgets.html"><i class="bi bi-box text-success"></i>Widgets</a> -->
+							</div>
+							<div class="mx-3 mt-2 d-grid">
+								<a href="login.html" class="btn btn-primary btn-sm">Logout</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- App header actions end -->
+
+			</div>
+			<!-- App header ends -->
+
+			<!-- Main container start -->
+			<div class="main-container">
+
+				<!-- Sidebar wrapper start -->
+				<nav id="sidebar" class="sidebar-wrapper">
+
+					<!-- Sidebar profile starts -->
+					<div class="shop-profile">
+						<p class="mb-1 fw-bold text-primary">Walmart</p>
+						<p class="m-0">Los Angeles, California</p>
+					</div>
+					<!-- Sidebar profile ends -->
+
+					<!-- Sidebar menu starts -->
+					<div class="sidebarMenuScroll">
+						<ul class="sidebar-menu">
+							<li>
+								<a href="indexA.html">
+									<i class="bi bi-pie-chart"></i>
+									<span class="menu-text">Dashboard</span>
+								</a>
+							</li>
+							<li>
+								<a href="listeTPAdmin.html">
+									<i class="bi bi-list-task"></i>
+									<span class="menu-text">Liste des TP</span>
+								</a>
+							</li>
+							<li>
+								<a href="examenTPAdmin.html">
+									<i class="bi bi-journal-text"></i>
+									<span class="menu-text">Examen TP</span>
+								</a>
+							</li>
+							<!-- <li>
+								<a href="#">
+									<i class="bi bi-gear"></i>
+									<span class="menu-text">Gestion des TP</span>
+								</a>
+							</li> -->
+							<!-- <li>
+								<a href="#">
+									<i class="bi bi-people"></i>
+									<span class="menu-text">Gestion des utilisateurs</span>
+								</a>
+							</li> -->
+							<li>
+								<a href="#">
+									<i class="bi bi-clipboard-check"></i>
+									<span class="menu-text">Suivi des Soumissions</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="bi bi-pen"></i>
+									<span class="menu-text">Gestion des Notes</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="bi bi-bar-chart-line"></i>
+									<span class="menu-text">Rapports et Statistiques</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="bi bi-bell"></i>
+									<span class="menu-text">Gestion des Notifications</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="bi bi-clock-history"></i>
+									<span class="menu-text">Logs et Historique</span>
+								</a>
+							</li>								
+							<li class="active current-page">
+								<a href="profilA.html">
+									<i class="bi bi-person-square"></i>
+									<span class="menu-text">Profil</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- Sidebar menu ends -->
+
+				</nav>
+				<!-- Sidebar wrapper end -->
+
+				<!-- App container starts -->
+				<div class="app-container">
+
+					<!-- App hero header starts -->
+					<div class="app-hero-header d-flex align-items-start">
+
+						<!-- Breadcrumb start -->
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item">
+								<i class="bi bi-house lh-1"></i>
+								<a href="index.html" class="text-decoration-none">Home</a>
+							</li>
+							<li class="breadcrumb-item" aria-current="page">Profil</li>
+						</ol>
+						<!-- Breadcrumb end -->
+
+						<!-- Sales stats start -->
+						<!-- Sales stats end -->
+
+					</div>
+					<!-- App Hero header ends -->
+
+					<!-- App body starts -->
+					<div class="app-body">
+						<section class="section profile">
+
+							<div class="row">
+								<div class="col-xl-4">
+						
+									<div class="card">
+										<div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+											<img src="assets/images/profile-img.jpg" alt="Profile" class="rounded-circle">
+											<h2>Kevin Anderson</h2>
+											<h3>Chef Département</h3>
+											<div class="social-links mt-2">
+												<a href="#" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+												<a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+												<a href="#" class="email"><i class="bi bi-envelope"></i></a>
+											</div>
+										</div>
+									</div>
+						
+								</div>
+						
+								<div class="col-xl-8">
+						
+									<div class="card">
+										<div class="card-body pt-3">
+											
+											<ul class="nav nav-tabs nav-tabs-bordered">
+								
+												<li class="nav-item">
+													<button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Informations personnelles</button>
+												</li>
+								
+												<li class="nav-item">
+													<button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Modifier profil</button>
+												</li>
+								
+												<li class="nav-item">
+													<button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">Changer mot de passe</button>
+												</li>
+								
+											</ul>
+	
+											<div class="tab-content pt-2">
+								
+												<div class="tab-pane fade show active profile-overview" id="profile-overview">
+													<h5 class="card-title">Détails du profil Administrateur</h5>
+												
+													<div class="row">
+														<div class="col-lg-3 col-md-4 label">Nom & Prénoms</div>
+														<div class="col-lg-9 col-md-8">Anderson Kevin</div>
+													</div>
+												
+													<div class="row">
+														<div class="col-lg-3 col-md-4 label">Grade</div>
+														<div class="col-lg-9 col-md-8">Professeur</div>
+													</div>
+												
+													<div class="row">
+														<div class="col-lg-3 col-md-4 label">Poste</div>
+														<div class="col-lg-9 col-md-8">Chef département Physique</div>
+													</div>
+												
+													<div class="row">
+														<div class="col-lg-3 col-md-4 label">E-mail</div>
+														<div class="col-lg-9 col-md-8">hlewiscs7@gmail.com</div>
+													</div>
+												
+													<div class="row">
+														<div class="col-lg-3 col-md-4 label">Numéro de téléphone</div>
+														<div class="col-lg-9 col-md-8">00229 65178014</div>
+													</div>
+	
+													<div class="row">
+														<div class="col-lg-3 col-md-4 label">Adresse</div>
+														<div class="col-lg-9 col-md-8">Cotonou, Bénin</div>
+													</div>
+												</div>
+												
+												<div class="tab-pane fade profile-edit pt-3" id="profile-edit">
+													<!-- Profile Edit Form -->
+													<form>
+														<div class="row mb-3">
+															<label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Photo de profil</label>
+															<div class="col-md-8 col-lg-9">
+																<img src="assets/images/profile-img.jpg" alt="Profile">
+																<div class="pt-2">
+																	<a href="#" class="btn btn-primary btn-sm" title="Upload new profile image"><i class="bi bi-upload"></i></a>
+																	<a href="#" class="btn btn-danger btn-sm" title="Remove my profile image"><i class="bi bi-trash"></i></a>
+																</div>
+															</div>
+														</div>
+									
+														<div class="row mb-3">
+															<label for="fullName" class="col-md-4 col-lg-3 col-form-label">Nom & Prénoms</label>
+															<div class="col-md-8 col-lg-9">
+																<input name="fullName" type="text" class="form-control" id="fullName" value="Kevin Anderson">
+															</div>
+														</div>
+									
+														<div class="row mb-3">
+															<label for="about" class="col-md-4 col-lg-3 col-form-label">Grade</label>
+															<div class="col-md-8 col-lg-9">
+																<input name="company" type="text" class="form-control" id="company" value="Professeur">
+															</div>
+														</div>
+									
+														<div class="row mb-3">
+															<label for="company" class="col-md-4 col-lg-3 col-form-label">Poste</label>
+															<div class="col-md-8 col-lg-9">
+																<input name="company" type="text" class="form-control" id="company" value="Chef département Physique">
+															</div>
+														</div>
+									
+														<div class="row mb-3">
+															<label for="Email" class="col-md-4 col-lg-3 col-form-label">Email</label>
+															<div class="col-md-8 col-lg-9">
+																<input name="email" type="email" class="form-control" id="Email" value="kanderson@example.com">
+															</div>
+														</div>
+									
+														<div class="row mb-3">
+															<label for="Phone" class="col-md-4 col-lg-3 col-form-label">Numéro de téléphone</label>
+															<div class="col-md-8 col-lg-9">
+																<input name="phone" type="text" class="form-control" id="Phone" value="(00229) 65178014">
+															</div>
+														</div>
+	
+														<div class="row mb-3">
+															<label for="Address" class="col-md-4 col-lg-3 col-form-label">Adresse</label>
+															<div class="col-md-8 col-lg-9">
+																  <input name="address" type="text" class="form-control" id="Address" value="A108 Adam Street, New York, NY 535022">
+															</div>
+														</div>
+									
+														<div class="row mb-3">
+															<label for="Twitter" class="col-md-4 col-lg-3 col-form-label">Profil WhatsApp</label>
+															<div class="col-md-8 col-lg-9">
+																<input name="twitter" type="text" class="form-control" id="Whatsapp" value="https://twitter.com/#">
+															</div>
+														</div>
+									
+														<div class="row mb-3">
+															<label for="Facebook" class="col-md-4 col-lg-3 col-form-label">Profil Facebook</label>
+															<div class="col-md-8 col-lg-9">
+																<input name="facebook" type="text" class="form-control" id="Facebook" value="https://facebook.com/#">
+															</div>
+														</div>
+									
+														<div class="row mb-3">
+															<label for="Instagram" class="col-md-4 col-lg-3 col-form-label">Profil Gmail</label>
+															<div class="col-md-8 col-lg-9">
+																<input name="instagram" type="text" class="form-control" id="Instagram" value="https://instagram.com/#">
+															</div>
+														</div>
+								
+									
+														<div class="text-center">
+														<button type="submit" class="btn btn-primary">Save Changes</button>
+														</div>
+													</form>
+													<!-- End Profile Edit Form -->
+												</div>
+								
+												<div class="tab-pane fade pt-3" id="profile-change-password">
+													<!-- Change Password Form -->
+													<form>
+									
+														<div class="row mb-3">
+															<label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Ancien mot de passe</label>
+															<div class="col-md-8 col-lg-9">
+																<input name="password" type="password" class="form-control" id="currentPassword">
+															</div>
+														</div>
+									
+														<div class="row mb-3">
+															<label for="newPassword" class="col-md-4 col-lg-3 col-form-label">Nouveau mot de passe</label>
+															<div class="col-md-8 col-lg-9">
+																<input name="newpassword" type="password" class="form-control" id="newPassword">
+															</div>
+														</div>
+									
+														<div class="row mb-3">
+															<label for="renewPassword" class="col-md-4 col-lg-3 col-form-label">Confirmer mot de passe</label>
+															<div class="col-md-8 col-lg-9">
+																<input name="renewpassword" type="password" class="form-control" id="renewPassword">
+															</div>
+														</div>
+									
+														<div class="text-center">
+															<button type="submit" class="btn btn-primary">Changer mot de passe</button>
+														</div>
+													</form>
+													<!-- End Change Password Form -->	
+												</div>
+								
+											</div>
+											
+										</div>
+									</div>
+						
+								</div>
+							</div>
+
+						</section>
+					</div>
+					<!-- App body ends -->
+
+					<!-- App footer start -->
+					<div class="app-footer">
+						<span>© InnovSys BREAKERS 2024</span>
+					</div>
+					<!-- App footer end -->
+
+				</div>
+				<!-- App container ends -->
+
+			</div>
+			<!-- Main container end -->
+
+		</div>
+		<!-- Page wrapper end -->
+
+
+		<!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+		<!-- ************* JavaScript Files ************* -->
+		<!-- Required jQuery first, then Bootstrap Bundle JS -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/modernizr.js"></script>
+		<script src="assets/js/moment.min.js"></script>
+		<!-- Custom JS files -->
+		<script src="assets/js/custom.js"></script>
+		<script src="assets/js/todays-date.js"></script>
+		<!-- Template Javascript -->
+		<script src="assets/js/main.js"></script>
+
+		<!-- ************* Vendor Js Files ************* -->
+		<!-- Overlay Scroll JS -->
+		<script src="assets/vendor/overlay-scroll/jquery.overlayScrollbars.min.js"></script>
+		<script src="assets/vendor/overlay-scroll/custom-scrollbar.js"></script>
+		
+	</body>
+
+</html>
