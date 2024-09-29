@@ -87,7 +87,7 @@
 .contact .info .address:hover i,
 .contact .info .phone:hover i,
 .contact .info .language:hover i {
-    background: #fc9d44;
+    background: linear-gradient(to right, #ff5066, #fc9d44);
     color: #fff;
 }
   
