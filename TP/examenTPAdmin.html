@@ -334,12 +334,12 @@
 																		</div>
 																	</div>
 																	<h2 class="text-center">Examen 1</h2>
-																	<h4 class="text-center">Date : <span class="highlight">17/01/2025</span> à <span class="highlight">10h</span></h4>
+																	<h4 class="text-center">Date : <span class="highlight">17-01-2025</span> à <span class="highlight">10:00</span></h4>
 																	<h4 class="text-center">Durée : <span class="highlight">3 heures</span></h4>
 																	<br>
 																</section>
 																<div class="rounded-bottom p-4">
-																	<a class="btn btn-primary rounded-pill py-2 px-4" href="#">COMMENCER</a>
+																	<a class="btn btn-success rounded-pill py-2 px-4" href="#">Commencer</a>
 																</div>
 															</div>
 														</div>
@@ -354,60 +354,69 @@
 											<div class="container-fluid service py-5">
 												<div class="container py-5">
 													<div class="row g-4">
-														<!-- Formulaire d'ajout du TP -->
+														<!-- Formulaire d'ajout d'un examen -->
 														<div class="col-lg-1"></div>
 														<div class="col-lg-4">
-															<form id="tp-form">
-																<div class="mb-3">
-																	<label for="tp-title" class="form-label">Titre du TP</label>
-																	<input type="text" class="form-control" id="tp-title" placeholder="Entrez le titre du TP">
+															<form id="examForm">
+																<div class="form-group mb-4">
+																	<label for="image">Image de l'examen</label>
+																	<input type="file" id="image" name="image" class="form-control" accept="image/*" required>
+																</div>																
+																<div class="form-group mb-4">
+																	<label for="subject">Titre de l'examen</label>
+																	<input type="text" id="subject" name="subject" class="form-control" placeholder="Nom de la matière" required>
 																</div>
-																<!-- <div class="mb-3">
-																	<label for="tp-description" class="form-label">Description</label>
-																	<textarea class="form-control" id="tp-description" rows="4" placeholder="Entrez une description"></textarea>
-																</div> -->
-																<div class="mb-3">
-																	<label for="tp-image" class="form-label">Image</label>
-																	<input type="text" class="form-control" id="tp-image" placeholder="URL de l'image">
+																<div class="form-group mb-4">
+																	<label for="date">Date de l'examen</label>
+																	<input type="date" id="date" name="date" class="form-control" required>
 																</div>
-																<div class="mb-3">
-																	<label for="tp-details" class="form-label">Détails</label>
-																	<input type="text" class="form-control" id="tp-details" placeholder="URL des détails">
+																<div class="form-group mb-4">
+																	<label for="time">Heure de l'examen</label>
+																	<input type="time" id="time" name="time" class="form-control" required>
+																</div>																
+																<div class="form-group mb-4">
+																	<label for="duration">Durée (en heures)</label>
+																	<input type="number" id="duration" name="duration" class="form-control" min="1" max="5" required>
 																</div>
-																<div class="mb-3">
-																	<label for="tp-file" class="form-label">Fichier</label>
-																	<input type="text" class="form-control" id="tp-file" placeholder="URL du fichier">
-																</div>
-																<button type="button" class="btn btn-primary" onclick="previewTP()">Aperçu du TP</button>
+																<button type="button" class="btn btn-success rounded-pill py-2 px-4" id="previewButton">Aperçu de l'examen</button>
 															</form>
 														</div>
 														<div class="col-lg-2"></div>
+										
 														<!-- Aperçu dynamique -->
 														<div class="col-lg-4">
-															<div class="service-item">
-																<div id="preview-img" class="service-img">
-																	<img src="stocker/img/service-1.jpg" class="img-fluid rounded-top w-100" alt="Aperçu">
-																</div>
-																<div class="rounded-bottom p-4 text-center">
-																	<h5 id="preview-title" class="h4 d-inline-block mb-4">Titre du TP</h5>
+															<div class="service-item" style="border: 2px solid rgb(117, 156, 233);">
+																<section class="section exam">
+																	<br><br>
+																	<div class="chest-image">
+																		<img id="previewImage" src="" alt="Image de l'examen" class="img-fluid mb-3" style="max-width: 100%; height: auto;"/>
+																		<div class="lock-time mt-2">
+																			<a class="lock-icon"><i class="bi bi-lock"></i></a>
+
+																			<p><span id="countdown"></span></p>
+																		</div>
+																	</div>
+																	<h2 class="text-center"><span id="previewSubject">---</span></h2>
+																	<h4 class="text-center">Date : <span class="highlight" id="previewDate">---</span> à <span class="highlight" id="previewTime">---</span></h4>
+																	<h4 class="text-center">Durée : <span class="highlight" id="previewDuration">---</span> heures</h4>
 																	<br>
-																	<!-- <p id="preview-description" class="mb-4">La description du TP s'affichera ici.</p> -->
-																	<a class="btn btn-primary rounded-pill py-2 px-4" href="#" id="preview-details">Lire plus</a>
-																	<a class="btn btn-primary rounded-pill py-2 px-4" href="#" id="preview-file">S'entraîner</a>
+																</section>
+																<div class="rounded-bottom p-4">
+																	<a class="btn btn-success rounded-pill py-2 px-4" href="#">Commencer</a>
 																</div>
 															</div>
-														</div>														
+														</div>
 														<div class="col-lg-1"></div>
 													</div>
-
+										
 													<!-- Add TP Button -->
 													<div class="text-center mt-4">
-														<button type="button" class="btn btn-success rounded-pill py-2 px-4">Ajouter à la liste des TP</button>
+														<button type="submit" class="btn btn-primary">Ajouter à la liste des examens</button>
 													</div>
 												</div>
 											</div>
-											<!-- Services End -->	
-										</div>	
+											<!-- Services End -->
+										</div>		
 									</div>
 								</div>
 							</div>
@@ -465,7 +474,7 @@
 					const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 					// Affichage du compte à rebours
-					countdownElement.innerHTML = days + "j " + hours + "h " + minutes + "m " + seconds + "s ";
+					countdownElement.innerHTML = days + "j " + hours + "h " + minutes + "min " + seconds + "s ";
 
 					// Lorsque l'examen commence
 					if (distance < 0) {
@@ -481,64 +490,36 @@
 		</script>
 
 		<script>
-			function previewTP() {
-				const title = document.getElementById('tp-title').value;
-				const description = document.getElementById('tp-description').value;
-				const imageUrl = document.getElementById('tp-image').value || 'stocker/img/service-1.jpg';
-				const detailsUrl = document.getElementById('tp-details').value || '#';
-				const fileUrl = document.getElementById('tp-file').value || '#';
+			document.getElementById('previewButton').addEventListener('click', function() {
+				// Récupérer les valeurs du formulaire
+				const subject = document.getElementById('subject').value;
+				const date = document.getElementById('date').value;
+				const time = document.getElementById('time').value;
+				const duration = document.getElementById('duration').value;
 
-				// Update preview with the entered details
-				document.getElementById('preview-title').textContent = title;
-				document.getElementById('preview-description').textContent = description;
-				document.getElementById('preview-img').innerHTML = `<img src="${imageUrl}" class="img-fluid rounded-top w-100" alt="Aperçu">`;
-				document.getElementById('preview-details').href = detailsUrl;
-				document.getElementById('preview-file').href = fileUrl;
-			}
+				// Récupérer l'image sélectionnée
+				const imageInput = document.getElementById('image');
+				const imageFile = imageInput.files[0];
 
-			function addTPToList() {
-				const title = document.getElementById('tp-title').value;
-				const description = document.getElementById('tp-description').value;
-				const imageUrl = document.getElementById('tp-image').value || 'stocker/img/service-1.jpg';
-				const detailsUrl = document.getElementById('tp-details').value || '#';
-				const fileUrl = document.getElementById('tp-file').value || '#';
+				// Mettre à jour l'aperçu dynamique
+				document.getElementById('previewSubject').innerText = subject ? subject : '---';
+				document.getElementById('previewDate').innerText = date ? date : '---';
+				document.getElementById('previewTime').innerText = time ? time : '---';
+				document.getElementById('previewDuration').innerText = duration ? duration : '---';
 
-				// Validate fields
-				if (!title || !description) {
-					alert("Veuillez remplir le titre et la description.");
-					return;
+				// Afficher l'image dans l'aperçu
+				if (imageFile) {
+					const reader = new FileReader();
+					reader.onload = function(e) {
+						document.getElementById('previewImage').src = e.target.result;
+					}
+					reader.readAsDataURL(imageFile);
+				} else {
+					document.getElementById('previewImage').src = '';
 				}
-
-				// Create a new TP card
-				const newTPCard = `
-					<div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-						<div class="service-item">
-							<div class="service-img">
-								<img src="${imageUrl}" class="img-fluid rounded-top w-100" alt="Image">
-							</div>
-							<div class="rounded-bottom p-4">
-								<a href="${detailsUrl}" class="h4 d-inline-block mb-4">${title}</a>
-								<p class="mb-4">${description}</p>
-								<a class="btn btn-primary rounded-pill py-2 px-4" href="${detailsUrl}">Lire plus</a>
-								<a class="btn btn-primary rounded-pill py-2 px-4" href="${fileUrl}">S'entraîner</a>
-							</div>
-						</div>
-					</div>
-				`;
-
-				// Add the new TP card to the list
-				document.getElementById('tab-1').insertAdjacentHTML('beforeend', newTPCard);
-
-				// Clear the form after adding
-				document.getElementById('tp-form').reset();
-
-				// Reset preview
-				document.getElementById('preview-title').textContent = "Titre du TP";
-				document.getElementById('preview-description').textContent = "La description du TP s'affichera ici.";
-				document.getElementById('preview-img').innerHTML = `<img src="stocker/img/service-1.jpg" class="img-fluid rounded-top w-100" alt="Aperçu">`;
-			}
-
+			});
 		</script>
+		
 	</body>
 
 </html>
