@@ -244,7 +244,8 @@ h6 {
 }
 
 .btn.btn.btn-success:hover {
-  box-shadow: inset 300px 0 0 0 var(--bs-primary) !important;
+  background: linear-gradient(to right, #28a745, #28a745, #007bff, #28a745);
+  /* box-shadow: inset 300px 0 0 0 var(--bs-primary) !important; */
   color: var(--bs-light) !important;
 }
 
